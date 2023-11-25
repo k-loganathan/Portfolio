@@ -48,9 +48,9 @@ $subject =$_POST['subject'];
 $message= $_POST['message'];
 $to = "mrisravellogu05@gmail.com";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-//$headers = "From: noreply@yoursite.com";
+//$headers = "From: $email";
 if($email!=NULL){
-    mail($to,$subject,$txt);
+    mail($to,$subject,$txt,$email;
 }
 
 echo $contact->send();
